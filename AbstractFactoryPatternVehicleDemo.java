@@ -1,5 +1,7 @@
+import java.io.FileNotFoundException;
+
 public class AbstractFactoryPatternVehicleDemo {
-    public static void main(String[] args){
+    public static void main(String[] args) throws FileNotFoundException{
 
         AbstractFactoryVehicle OtherVehicleFactory = FactoryProducerVehicle.getFactory(true);
         AbstractFactoryVehicle VehicleFactory = FactoryProducerVehicle.getFactory(false);
